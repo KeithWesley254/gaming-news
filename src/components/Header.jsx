@@ -3,6 +3,7 @@ import { AppBar, Box, Toolbar, Typography, Menu, Container, Button, MenuItem, Li
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useLocation, useNavigate } from "react-router-dom";
+import mainLogo from '../main-logo.svg';
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -19,11 +20,12 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="sticky">
+    <AppBar style={{backgroundColor: "#272727"}} position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <div className="headerLogo" onClick={() => navigate("/")}>
-            <p
+            <img src={mainLogo} width="100" height="70" alt="TXC Clan logo" />
+            {/* <p
               style={{
                 fontWeight: "bolder",
                 fontSize: 14,
@@ -36,7 +38,7 @@ const Header = () => {
               <span style={{ color: "#ff8833", cursor: "pointer" }}>
                 Gaming News
               </span>
-            </p>
+            </p> */}
           </div>
 
           <Box
@@ -52,7 +54,7 @@ const Header = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              sx={{ color: "#ff8833" }}
+              sx={{ color: "#0bbb34" }}
             >
               <MenuIcon />
             </IconButton>
@@ -88,7 +90,8 @@ const Header = () => {
                     display: "block",
                     fontSize: 14,
                     fontWeight: 600,
-                    color: "#ff8833",
+                    color: "#0bbb34",
+                    fontFamily: 'Rubik Distressed'
                   }}
                   textAlign="center"
                 >
@@ -108,7 +111,8 @@ const Header = () => {
                     display: "block",
                     fontSize: 14,
                     fontWeight: 600,
-                    color: "#ff8833",
+                    color: "#0bbb34",
+                    fontFamily: 'Rubik Distressed'
                   }}
                   textAlign="center"
                 >
@@ -128,7 +132,8 @@ const Header = () => {
                     display: "block",
                     fontSize: 14,
                     fontWeight: 600,
-                    color: "#ff8833",
+                    color: "#0bbb34",
+                    fontFamily: 'Rubik Distressed'
                   }}
                   textAlign="center"
                 >
@@ -138,7 +143,7 @@ const Header = () => {
 
             </Menu>
 
-            <Box sx={{my: 3, display: "flex", justifyContent: "end"}}>
+            <Box sx={{my: 2, display: "flex", justifyContent: "end"}}>
 
                 &nbsp; &nbsp; &nbsp;
                 <Link href='https://github.com/KeithWesley254' color="inherit" target="_blank" underline='none'><i className="fa-brands fa-github"></i></Link>
@@ -176,7 +181,8 @@ const Header = () => {
                 display: "block",
                 fontSize: 15,
                 fontWeight: 600,
-                color: "#ff8833",
+                color: "#0bbb34",
+                fontFamily: 'Rubik Distressed'
               }}
             >
               Home
@@ -194,7 +200,8 @@ const Header = () => {
                 display: "regular",
                 fontSize: 15,
                 fontWeight: 600,
-                color: "#ff8833",
+                color: "#0bbb34",
+                fontFamily: 'Rubik Distressed'
               }}
             >
               Free Games
@@ -212,7 +219,8 @@ const Header = () => {
                 display: "regular",
                 fontSize: 15,
                 fontWeight: 600,
-                color: "#ff8833",
+                color: "#0bbb34",
+                fontFamily: 'Rubik Distressed'
               }}
             >
               MMO news
