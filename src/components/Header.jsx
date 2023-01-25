@@ -123,27 +123,6 @@ const Header = () => {
               <MenuItem
                 onClick={() => {
                   handleCloseNavMenu();
-                  navigate("/mmo-news");
-                }}
-              >
-                <Typography
-                  sx={{
-                    my: 1,
-                    display: "block",
-                    fontSize: 14,
-                    fontWeight: 600,
-                    color: "#0bbb34",
-                    fontFamily: 'Rubik Distressed'
-                  }}
-                  textAlign="center"
-                >
-                  MMO news
-                </Typography>
-              </MenuItem>
-
-              <MenuItem
-                onClick={() => {
-                  handleCloseNavMenu();
                   navigate("/marvel");
                 }}
               >
@@ -223,25 +202,6 @@ const Header = () => {
               }}
             >
               Free Games
-            </Button>
-            &nbsp; &nbsp; &nbsp;
-
-            <Button
-              onClick={() => {
-                handleCloseNavMenu();
-                navigate("/mmo-news");
-              }}
-              sx={{
-                my: 2,
-                textTransform: "none",
-                display: "regular",
-                fontSize: 15,
-                fontWeight: 600,
-                color: "#0bbb34",
-                fontFamily: 'Rubik Distressed'
-              }}
-            >
-              MMO news
             </Button>
             &nbsp; &nbsp; &nbsp;
 

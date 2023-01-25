@@ -10,6 +10,7 @@ import axios from "axios";
 import SpecificGiveaway from './pages/SpecificGiveaway';
 import Footer from './components/Footer';
 import Marvel from './pages/Marvel';
+import SpecificCharacter from './pages/SpecificCharacter';
 
 function App() {
 
@@ -42,9 +43,9 @@ function App() {
       <Routes>
         <Route exact='true' path='/' element={<Hero newsItems={newsItems}/>}/>
         <Route path='/free-games' element={<FreeGames />} />
-        <Route path='/mmo-news' element={<MmoNews />} />
         <Route path='/specific-giveaway/:id' element={<SpecificGiveaway />} />
         <Route path='/marvel' element={<Marvel />} />
+        <Route path='/characters/:id' element={<SpecificCharacter />} />
       </Routes>
       <Footer />
     </div>

@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div>
         <Box 
-        sx={{mt: 4, py: 3, position: {xs: "absolute", md: "relative"}, top: {xs: "140%", md: "0%"}}}
+        sx={{mt: 4, py: 3, position: {xs: "absolute", md: "relative"}, top: {xs: "160%", md: "0%"}}}
         bgcolor="#3a3a3a" 
         color="#fff"
         >
