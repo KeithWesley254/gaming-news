@@ -23,7 +23,7 @@ const Header = () => {
     <AppBar style={{backgroundColor: "#272727"}} position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <div className="headerLogo" onClick={() => navigate("/")}>
+          <div style={{cursor: "pointer"}} className="headerLogo" onClick={() => navigate("/")}>
             <img src={mainLogo} width="100" height="70" alt="TXC Clan logo" />
             {/* <p
               style={{

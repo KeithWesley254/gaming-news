@@ -27,7 +27,6 @@ const styles = {
 const Giveaways = () => {
     const [allGiveaways, setAllGiveaways] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
-    const [searchResults, setSearchResults] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -47,11 +46,13 @@ const Giveaways = () => {
 
     // console.log(allGiveaways);
 
-    const handleSearch = (e) => {
+    const handleSearch = () => {
+        return allGiveaways.filter(ga => ga.title.toLowerCase().includes(searchTerm.toLowerCase()));
+    }
+
+    const handleSubmit = (e) => {
         e.preventDefault();
-        setSearchTerm(e.target.value);
-        const results = allGiveaways.filter(ga => ga.title.toLowerCase().includes(searchTerm.toLowerCase()));
-        setSearchResults(results);
+        handleSearch();
     }
 
   return (
@@ -64,12 +65,12 @@ const Giveaways = () => {
                 </Box>
 
                     <ThemeProvider theme={theme}>
-                        <Paper component="form" style={styles.root} onSubmit={handleSearch}>
+                        <Paper component="form" style={styles.root} onSubmit={handleSubmit}>
                             <InputBase
                             style={styles.input}
                             placeholder="Name of the Game..."
                             inputProps={{ '"Cinzel", serif': 'name of the game...' }}
-                            onChange={handleSearch}
+                            onChange={(e) => setSearchTerm(e.target.value)}
                             />
                             <IconButton type="submit" style={styles.iconButton}>
                                 <SearchIcon />
@@ -79,7 +80,8 @@ const Giveaways = () => {
                 </Box>
                 
                 <Box sx={{overflowY: "scroll", my: 2, maxHeight: "400px"}}>
-                    {searchResults.map(result => (
+                    {handleSearch()
+                    .map(result => (
                         <ol key={result.id}>
                             <Typography 
                             sx={{textAlign: "left", fontSize: "13px", fontFamily: "'Cinzel', serif", cursor: "pointer"}} 
