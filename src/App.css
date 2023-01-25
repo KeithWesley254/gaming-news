@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
   font-family: 'Manrope', sans-serif;
@@ -170,10 +170,15 @@
 .back {
   transform: translateZ(-125px) rotateY(180deg);
   background-color: #fff;
-  max-height: 115px;
+  max-height: 118px;
 }
 
 .left {
   transform: rotateY(270deg) translateX(-125px);
   transform-origin: 0 50%;
+}
+
+/* Spans */
+.giveaway-span{
+  color: #0bbb34;
 }
