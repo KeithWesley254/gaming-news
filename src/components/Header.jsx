@@ -24,8 +24,8 @@ const Header = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <div style={{cursor: "pointer"}} className="headerLogo" onClick={() => navigate("/")}>
-            <img src={mainLogo} width="100" height="70" alt="TXC Clan logo" />
-            {/* <p
+            {/* <img src={mainLogo} width="100" height="70" alt="TXC Clan logo" /> */}
+            <p
               style={{
                 fontWeight: "bolder",
                 fontSize: 14,
@@ -35,10 +35,10 @@ const Header = () => {
             >
               TXC Clan
               <br />
-              <span style={{ color: "#ff8833", cursor: "pointer" }}>
+              <span style={{ color: "#0bbb34", fontFamily: 'Rubik Distressed', cursor: "pointer" }}>
                 Gaming News
               </span>
-            </p> */}
+            </p>
           </div>
 
           <Box

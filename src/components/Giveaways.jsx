@@ -61,7 +61,7 @@ const Giveaways = () => {
             <Grid item xs={12} md={12}>
                 <Box >
                 <Box sx={{display: 'flex', justifyContent: 'center'}}>
-                    <Typography sx={{fontFamily: 'Rubik Distressed', fontSize: "70px", textAlign: 'center'}}>GiveAways</Typography>
+                    <Typography sx={{fontFamily: 'Rubik Distressed', fontSize: {xs: "40px", md: "70px"}, textAlign: 'center'}}>GiveAways</Typography>
                 </Box>
 
                     <ThemeProvider theme={theme}>
@@ -87,7 +87,7 @@ const Giveaways = () => {
                             sx={{textAlign: "left", fontSize: "13px", fontFamily: "'Cinzel', serif", cursor: "pointer"}} 
                             onClick={() => navigate(`/specific-giveaway/${result.id}`)}
                             >
-                               <img width='50px' height='50px' src={result.thumbnail} alt={result.title} /> &nbsp; {result.title}
+                               <img width='50px' height='40px' src={result.thumbnail} alt={result.title} /> &nbsp; {result.title}
                             </Typography>
                         </ol>
                     ))}

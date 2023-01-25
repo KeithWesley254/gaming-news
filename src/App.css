@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 * {
-  font-family: 'Cinzel', serif;
+  font-family: 'Manrope', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -61,18 +62,32 @@
 
 /* MMO NEWS */
 .articleContent{
-  font-family: 'Cinzel', serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 .articleContent img{
-  width: 300px;
-  height: auto;
-  justify-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 300px;
 }
+
+@media (max-width: 575px) {
+
+  .articleContent img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
 .articleContent p{
   text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .articleContent a{

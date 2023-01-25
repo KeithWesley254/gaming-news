@@ -9,14 +9,12 @@ const Hero = ({newsItems}) => {
     <Box>
       <Grid container spacing={2} columns={12}>
 
-        <Grid item xs={12} md={4}>
-          <Giveaways />
-        </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={8}>
           <MmoNews newsItems={newsItems}/>
         </Grid>
+
         <Grid item xs={12} md={4}>
-          Free Games
+          <Giveaways />
         </Grid>
 
       </Grid>
