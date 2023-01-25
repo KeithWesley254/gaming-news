@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+.heroScroll::-webkit-scrollbar {
+  display: none;
+}
+
 .wrapper {
   width: 100%;
   position: relative;

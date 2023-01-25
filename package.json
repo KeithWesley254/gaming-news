@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "env-cmd -f .env.production vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,8 +16,12 @@
     "@mui/styled-engine-sc": "^5.11.0",
     "axios": "^1.2.4",
     "dompurify": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "dotenv-webpack": "^8.0.1",
+    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-env-config": "^1.0.0",
     "react-router-dom": "^6.7.0",
     "styled-components": "^5.3.6"
   },

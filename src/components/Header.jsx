@@ -141,6 +141,27 @@ const Header = () => {
                 </Typography>
               </MenuItem>
 
+              <MenuItem
+                onClick={() => {
+                  handleCloseNavMenu();
+                  navigate("/marvel");
+                }}
+              >
+                <Typography
+                  sx={{
+                    my: 1,
+                    display: "block",
+                    fontSize: 14,
+                    fontWeight: 600,
+                    color: "#0bbb34",
+                    fontFamily: 'Rubik Distressed'
+                  }}
+                  textAlign="center"
+                >
+                  Marvel
+                </Typography>
+              </MenuItem>
+
             </Menu>
 
             <Box sx={{my: 2, display: "flex", justifyContent: "end"}}>
@@ -221,6 +242,25 @@ const Header = () => {
               }}
             >
               MMO news
+            </Button>
+            &nbsp; &nbsp; &nbsp;
+
+            <Button
+              onClick={() => {
+                handleCloseNavMenu();
+                navigate("/marvel");
+              }}
+              sx={{
+                my: 2,
+                textTransform: "none",
+                display: "regular",
+                fontSize: 15,
+                fontWeight: 600,
+                color: "#0bbb34",
+                fontFamily: 'Rubik Distressed'
+              }}
+            >
+              Marvel
             </Button>
             &nbsp; &nbsp; &nbsp;
             

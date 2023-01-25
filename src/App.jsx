@@ -8,6 +8,8 @@ import MmoNews from './pages/MmoNews';
 import NewsTicker from './components/NewsTicker';
 import axios from "axios";
 import SpecificGiveaway from './pages/SpecificGiveaway';
+import Footer from './components/Footer';
+import Marvel from './pages/Marvel';
 
 function App() {
 
@@ -42,7 +44,9 @@ function App() {
         <Route path='/free-games' element={<FreeGames />} />
         <Route path='/mmo-news' element={<MmoNews />} />
         <Route path='/specific-giveaway/:id' element={<SpecificGiveaway />} />
+        <Route path='/marvel' element={<Marvel />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

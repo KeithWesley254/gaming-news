@@ -10,7 +10,7 @@ const MmoNews = ({newsItems}) => {
       <Box sx={{display: 'flex', justifyContent: 'center'}}>
         <Typography sx={{fontFamily: 'Rubik Distressed', fontSize: {xs: "40px", md: "70px"}, textAlign: 'center'}}>Gaming News</Typography>
       </Box>
-      <Box sx={{overflowY: "scroll", maxHeight: {xs: "400px", md: "500px"}}}>
+      <Box sx={{overflowY: "scroll", maxHeight: {xs: "400px", md: "520px"}}}>
         {newsItems.map(story => {
           return(
             <Box key={story.id}>

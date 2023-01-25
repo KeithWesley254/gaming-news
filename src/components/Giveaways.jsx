@@ -78,7 +78,7 @@ const Giveaways = () => {
                     </ThemeProvider>
                 </Box>
                 
-                <Box sx={{overflowY: "scroll", my: 2, maxHeight: "400px"}}>
+                <Box sx={{overflowY: "scroll", my: 2, maxHeight:{md: "400px", xs: "400px"}}}>
                     {handleSearch()
                     .map(result => (
                         <ol key={result.id}>
