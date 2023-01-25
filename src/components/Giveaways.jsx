@@ -12,7 +12,7 @@ const styles = {
     padding: '2px 4px',
     display: 'flex',
     alignItems: 'center',
-    width: '50%',
+    width: '100%',
   },
   input: {
     marginLeft: theme.spacing(1),
@@ -58,23 +58,27 @@ const Giveaways = () => {
     <Box>
         <Grid container spacing={2} columns={12}>
             <Grid item xs={12} md={12}>
-                <Box sx={{display: "flex", justifyContent: "center"}}>
-                <ThemeProvider theme={theme}>
-                    <Paper component="form" style={styles.root} onSubmit={handleSearch}>
-                        <InputBase
-                        style={styles.input}
-                        placeholder="Name of the Game..."
-                        inputProps={{ '"Cinzel", serif': 'name of the game...' }}
-                        onChange={handleSearch}
-                        />
-                        <IconButton type="submit" style={styles.iconButton}>
-                            <SearchIcon />
-                        </IconButton>
-                    </Paper>
-                </ThemeProvider>
+                <Box >
+                <Box sx={{display: 'flex', justifyContent: 'center'}}>
+                    <Typography sx={{fontFamily: 'Rubik Distressed', fontSize: "70px", textAlign: 'center'}}>GiveAways</Typography>
                 </Box>
-                <Typography sx={{textAlign: "center"}}><b>AVAILABLE GIVEAWAYS</b></Typography>
-                <Box sx={{overflowY: "scroll", my: 2, maxHeight: "500px"}}>
+
+                    <ThemeProvider theme={theme}>
+                        <Paper component="form" style={styles.root} onSubmit={handleSearch}>
+                            <InputBase
+                            style={styles.input}
+                            placeholder="Name of the Game..."
+                            inputProps={{ '"Cinzel", serif': 'name of the game...' }}
+                            onChange={handleSearch}
+                            />
+                            <IconButton type="submit" style={styles.iconButton}>
+                                <SearchIcon />
+                            </IconButton>
+                        </Paper>
+                    </ThemeProvider>
+                </Box>
+                
+                <Box sx={{overflowY: "scroll", my: 2, maxHeight: "400px"}}>
                     {searchResults.map(result => (
                         <ol key={result.id}>
                             <Typography 

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 * {
-  font-family: 'Rubik Distressed', cursive;
+  font-family: 'Cinzel', serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -57,4 +57,26 @@
   100% {
     transform: translateX(var(--animationDistance));
   }
+}
+
+/* MMO NEWS */
+.articleContent{
+  font-family: 'Cinzel', serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.articleContent img{
+  width: 300px;
+  height: auto;
+  justify-self: center;
+}
+.articleContent p{
+  text-align: left;
+}
+
+.articleContent a{
+  text-transform: none;
+  color: #ea6328;
+  text-decoration: none;
 }

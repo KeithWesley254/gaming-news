@@ -36,7 +36,7 @@ function App() {
       <Header />
       <NewsTicker newsItems={newsItems} />
       <Routes>
-        <Route exact='true' path='/' element={<Hero />}/>
+        <Route exact='true' path='/' element={<Hero newsItems={newsItems}/>}/>
         <Route path='/free-games' element={<FreeGames />} />
         <Route path='/mmo-news' element={<MmoNews />} />
         <Route path='/specific-giveaway/:id' element={<SpecificGiveaway />} />

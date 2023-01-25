@@ -3,7 +3,7 @@ import React from 'react'
 import Giveaways from '../components/Giveaways'
 import MmoNews from './MmoNews'
 
-const Hero = () => {
+const Hero = ({newsItems}) => {
 
   return (
     <Box>
@@ -13,7 +13,7 @@ const Hero = () => {
           <Giveaways />
         </Grid>
         <Grid item xs={12} md={4}>
-          <MmoNews />
+          <MmoNews newsItems={newsItems}/>
         </Grid>
         <Grid item xs={12} md={4}>
           Free Games
