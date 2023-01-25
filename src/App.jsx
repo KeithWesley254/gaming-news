@@ -7,10 +7,12 @@ import FreeGames from './pages/FreeGames';
 import MmoNews from './pages/MmoNews';
 import NewsTicker from './components/NewsTicker';
 import axios from "axios";
+import SpecificGiveaway from './pages/SpecificGiveaway';
 
 function App() {
 
   const [newsItems, setNewsItems] = useState(["listening for news..."]);
+  const [newsErrors, setNewsErrors] = useState([]);
 
   useEffect(() =>  {
     const options = {
@@ -25,7 +27,7 @@ function App() {
     axios.request(options).then(function (response) {
       setNewsItems(response.data);
     }).catch(function (error) {
-      console.error(error);
+      setNewsErrors(error);
     });
   }, [])
 
@@ -37,6 +39,7 @@ function App() {
         <Route exact='true' path='/' element={<Hero />}/>
         <Route path='/free-games' element={<FreeGames />} />
         <Route path='/mmo-news' element={<MmoNews />} />
+        <Route path='/specific-giveaway/:id' element={<SpecificGiveaway />} />
       </Routes>
     </div>
   )
