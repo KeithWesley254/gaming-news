@@ -69,7 +69,6 @@ const Giveaways = () => {
                             <InputBase
                             style={styles.input}
                             placeholder="Name of the Game..."
-                            inputProps={{ '"Cinzel", serif': 'name of the game...' }}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             />
                             <IconButton type="submit" style={styles.iconButton}>

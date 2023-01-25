@@ -11,7 +11,9 @@ import SpecificGiveaway from './pages/SpecificGiveaway';
 
 function App() {
 
-  const [newsItems, setNewsItems] = useState(["listening for news..."]);
+  const [newsItems, setNewsItems] = useState([
+    {id: 1, title: "listening for news..."}
+  ]);
   const [newsErrors, setNewsErrors] = useState([]);
 
   useEffect(() =>  {

@@ -4,7 +4,7 @@ import DOMPurify from 'dompurify';
 
 const MmoNews = ({newsItems}) => {
 
-  console.log(newsItems)
+  // console.log(newsItems)
   return (
     <Box>
       <Box sx={{display: 'flex', justifyContent: 'center'}}>
@@ -14,7 +14,7 @@ const MmoNews = ({newsItems}) => {
         {newsItems.map(story => {
           return(
             <Box key={story.id}>
-              <Typography sx={{fontFamily: '"Cinzel", serif', fontSize: "25px", fontWeight: "bolder", textAlign: 'center'}} >{story.title}</Typography>
+              <Typography sx={{fontFamily: 'cinzel', fontSize: "25px", fontWeight: "bolder", textAlign: 'center'}} >{story.title}</Typography>
               <br />
               <Box className="articleContent"
               dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(story.article_content).replace(/<a /g, '<a target="_blank" rel="noopener noreferrer" ') }}
