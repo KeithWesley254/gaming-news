@@ -8,9 +8,9 @@ const MmoNews = ({newsItems}) => {
   return (
     <Box>
       <Box sx={{display: 'flex', justifyContent: 'center'}}>
-        <Typography sx={{fontFamily: 'Rubik Distressed', fontSize: "70px", textAlign: 'center'}}>MMO News</Typography>
+        <Typography sx={{fontFamily: 'Rubik Distressed', fontSize: "70px", textAlign: 'center'}}>News</Typography>
       </Box>
-      <Box sx={{overflowY: "scroll", maxHeight: "700px"}}>
+      <Box sx={{overflowY: "scroll", maxHeight: "500px"}}>
         {newsItems.map(story => {
           return(
             <Box key={story.id}>
