@@ -165,10 +165,7 @@ const Header = () => {
           </Box>
           
           <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex", justifyContent: "end" },
-            }}
+            sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: "center" } }}
           >
             <Button
               onClick={() => {
@@ -226,27 +223,26 @@ const Header = () => {
               MMO news
             </Button>
             &nbsp; &nbsp; &nbsp;
-
-            <Box sx={{my: 3, }}>
-
-                &nbsp; &nbsp; &nbsp;
-                <Link href='https://github.com/KeithWesley254' color="inherit" target="_blank" underline='none'><i className="fa-brands fa-github"></i></Link>
-                &nbsp; &nbsp; &nbsp;
-
-                <Link href='https://www.linkedin.com/in/keith-wesley-707802215/' color="inherit" target="_blank" underline='none'><i className="fa-brands fa-linkedin"></i></Link>
-                &nbsp; &nbsp; &nbsp;
-
-                <Link href='https://twitter.com/Keith_wesley_' color="inherit" target="_blank" underline='none'><i className="fa-brands fa-twitter"></i></Link>
-                &nbsp; &nbsp; &nbsp;
-
-                <Link href='https://www.youtube.com/channel/UCZ-MKtsBjTD4glktrbEYFXw' target="_blank" color="inherit" underline='none'><i className="fa-brands fa-youtube"></i></Link>
-                &nbsp; &nbsp; &nbsp;
-
-                <Link href='https://www.instagram.com/keith_wesley_/' target="_blank" color="inherit" underline='none'><i className="fa-brands fa-instagram"></i></Link>
-                &nbsp; &nbsp; &nbsp;
-            </Box>
-
             
+          </Box>
+
+          <Box sx={{ flexGrow: 0, my: 3, display: {xs: "none", md: "flex"} }}>
+
+            &nbsp; &nbsp; &nbsp;
+            <Link href='https://github.com/KeithWesley254' color="inherit" target="_blank" underline='none'><i className="fa-brands fa-github"></i></Link>
+            &nbsp; &nbsp; &nbsp;
+
+            <Link href='https://www.linkedin.com/in/keith-wesley-707802215/' color="inherit" target="_blank" underline='none'><i className="fa-brands fa-linkedin"></i></Link>
+            &nbsp; &nbsp; &nbsp;
+
+            <Link href='https://twitter.com/Keith_wesley_' color="inherit" target="_blank" underline='none'><i className="fa-brands fa-twitter"></i></Link>
+            &nbsp; &nbsp; &nbsp;
+
+            <Link href='https://www.youtube.com/channel/UCZ-MKtsBjTD4glktrbEYFXw' target="_blank" color="inherit" underline='none'><i className="fa-brands fa-youtube"></i></Link>
+            &nbsp; &nbsp; &nbsp;
+
+            <Link href='https://www.instagram.com/keith_wesley_/' target="_blank" color="inherit" underline='none'><i className="fa-brands fa-instagram"></i></Link>
+            &nbsp; &nbsp; &nbsp;
           </Box>
 
         </Toolbar>

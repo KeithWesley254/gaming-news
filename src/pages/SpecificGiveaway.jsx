@@ -29,8 +29,6 @@ const SpecificGiveaway = () => {
     });
   }, [params]);
 
-  console.log(giveaway)
-
   const date1 = new Date(giveaway.end_date);
   const date2 = new Date();
 
