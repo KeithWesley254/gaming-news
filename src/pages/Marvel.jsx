@@ -35,7 +35,7 @@ const Marvel = () => {
       fetchMovies();
       const fetchCharacters = async () => {
         try {
-            const res = await axios.get(`https://gateway.marvel.com/v1/public/characters?apikey=${REACT_APP_PUBLIC_KEY}&ts=${ts}&hash=${hash}`);
+            const res = await axios.get(`https://gateway.marvel.com/v1/public/characters?apikey=${REACT_APP_PUBLIC_KEY}&ts=${ts}&hash=${hash}&limit=100`);
             setAllCharacters(res.data.data.results)
         } catch (error) {
             console.log(error);

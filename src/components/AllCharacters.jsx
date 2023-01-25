@@ -51,10 +51,7 @@ const AllCharacters = ({allCharacters}) => {
                         alt={char?.name}
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="body2" component="div">
-                        Full Name
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography sx={{fontFamily: 'cinzel', fontSize: '17px'}}>
                         {char?.name}
                         </Typography>
                     </CardContent>
@@ -109,7 +106,7 @@ const AllCharacters = ({allCharacters}) => {
                     display: "flex",
                     justifyContent: "center"
                 }}
-                count={parseInt((handleSearch().length/10).toFixed(0))}
+                count={(handleSearch().length/10)|0}
                 onChange={(_, value) => {
                     setCharPage(value);
                 }}
