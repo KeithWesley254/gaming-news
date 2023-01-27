@@ -40,7 +40,7 @@ const AllCharacters = ({allCharacters}) => {
     .slice((charPage - 1) * 10, (charPage - 1) * 10 + 10)
     .map((char) => {
         return(
-        <Box key={char.id} sx={{mr:2, ml: 2}}>
+        <Box key={char.id}>
             <Link style={{textDecoration: "none"}} to={`/characters/${char.id}`}>
                 <Card sx={{ width: 200, height: 260, border: 1, p: 2 }}>
                     <CardActionArea>
@@ -86,7 +86,7 @@ const AllCharacters = ({allCharacters}) => {
             </Grid>
         </Grid>
 
-        <Grid container spacing={2} columns={12} sx={{textAlign: "center", pl:4, pr:4, justifyContent: "center", alignItems: "center", fontSize: 14 }}>
+        <Grid container spacing={2} columns={12} sx={{textAlign: "center", justifyContent: "center", alignItems: "center", fontSize: 14 }}>
             <Grid item xs={12} md={12} >
               <div className='heroScroll' style={{ position: "relative", width: "100%", overflowX: "auto",}}>
                 <Box sx={{ borderRadius: 20, display: "inline-flex", flexDirection: 'row'  }}>
@@ -119,4 +119,4 @@ const AllCharacters = ({allCharacters}) => {
   )
 }
 
-export default AllCharacters
+export default AllCharacters;

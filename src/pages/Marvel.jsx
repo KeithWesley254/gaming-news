@@ -116,7 +116,7 @@ const Marvel = () => {
         </Grid>
       </Grid>
 
-      <Grid container spacing={2} columns={12}>
+      <Grid container spacing={2} columns={12} sx={{pl:4, pr:4, }}>
         <Grid item xs={12} md={12}>
           <Box sx={{display: 'flex', ml: {xs: 0, md: 4}, justifyContent: 'start'}}>
             <Typography sx={{fontFamily: 'Rubik Distressed', fontSize: {xs: "20px", md: "30px"}, textAlign: 'start'}}>Characters</Typography>

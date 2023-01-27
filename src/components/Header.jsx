@@ -3,7 +3,6 @@ import { AppBar, Box, Toolbar, Typography, Menu, Container, Button, MenuItem, Li
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useLocation, useNavigate } from "react-router-dom";
-import mainLogo from '../main-logo.svg';
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -23,7 +22,10 @@ const Header = () => {
     <AppBar style={{backgroundColor: "#272727"}} position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <div style={{cursor: "pointer"}} className="headerLogo" onClick={() => navigate("/")}>
+          <div style={{cursor: "pointer"}} className="headerLogo" onClick={() => {
+            navigate("/");
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+            }}>
             {/* <img src={mainLogo} width="100" height="70" alt="TXC Clan logo" /> */}
             <p
               style={{
@@ -82,6 +84,7 @@ const Header = () => {
                 onClick={() => {
                   handleCloseNavMenu();
                   navigate("/");
+                  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
                 }}
               >
                 <Typography
@@ -103,6 +106,7 @@ const Header = () => {
                 onClick={() => {
                   handleCloseNavMenu();
                   navigate("/free-games");
+                  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
                 }}
               >
                 <Typography
@@ -124,6 +128,7 @@ const Header = () => {
                 onClick={() => {
                   handleCloseNavMenu();
                   navigate("/marvel");
+                  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
                 }}
               >
                 <Typography
@@ -171,6 +176,7 @@ const Header = () => {
               onClick={() => {
                 handleCloseNavMenu();
                 navigate("/");
+                window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
               }}
               sx={{
                 my: 2,
@@ -190,6 +196,7 @@ const Header = () => {
               onClick={() => {
                 handleCloseNavMenu();
                 navigate("/free-games");
+                window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
               }}
               sx={{
                 my: 2,
@@ -209,6 +216,7 @@ const Header = () => {
               onClick={() => {
                 handleCloseNavMenu();
                 navigate("/marvel");
+                window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
               }}
               sx={{
                 my: 2,

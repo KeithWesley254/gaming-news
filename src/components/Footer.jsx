@@ -19,7 +19,12 @@ const Footer = () => {
                         <Box borderBottom={1}>Navigate</Box>
                         &nbsp;
                         <Box>
-                            <Link sx={{fontSize: "13px"}} onClick={() => navigate(`/`)} style={{cursor: 'pointer'}} color="inherit" underline='none'><i className="fa-solid fa-house"></i> Home</Link>
+                            <Link sx={{fontSize: "13px"}} onClick={() => 
+                            { 
+                            navigate(`/`);
+                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                            }} 
+                            style={{cursor: 'pointer'}} color="inherit" underline='none'><i className="fa-solid fa-house"></i> Home</Link>
                         </Box>
                         &nbsp;
                         <Box>
@@ -56,7 +61,7 @@ const Footer = () => {
                         <Typography
                         sx={{
                         mr: 2,
-                        display: { xs: 'none', md: 'flex' },
+                        display: 'flex',
                         fontFamily: 'cinzel',
                         fontSize: '18px',
                         fontWeight: 700,
@@ -64,7 +69,10 @@ const Footer = () => {
                         textDecoration: 'none',
                         cursor: 'pointer',
                         }}
-                        onClick={() => navigate(`/`)}
+                        onClick={() => {
+                            navigate(`/`);
+                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                        }}
                         >
                         <img src={image} alt="logo" style={{maxHeight: "40px", maxWidth: "60px", cursor: "pointer"}}/>
                         &nbsp;

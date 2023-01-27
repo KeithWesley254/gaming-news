@@ -23,7 +23,7 @@ const NewsTicker = ({newsItems}) => {
                 className="inner moving"
                 style={{
                 '--animationDuration': `${newsItems.length * 10}s`,
-                '--animationDistance': animationDistance + 'px'
+                '--animationDistance': animationDistance + 'px',
                 }}
                 ref={tickerRef}
             >
