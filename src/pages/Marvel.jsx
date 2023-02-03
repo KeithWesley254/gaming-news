@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
-import { Box, Card, CardContent, CardMedia, Grid, CardActionArea, Typography, Button } from '@mui/material';
+import { Box, Card, CardContent, CardMedia, Grid, CardActionArea, Typography } from '@mui/material';
 import AllCharacters from '../components/AllCharacters';
 
 const REACT_APP_PRIV_KEY = import.meta.env.VITE_REACT_APP_PRIV_KEY;

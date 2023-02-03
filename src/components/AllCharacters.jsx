@@ -40,7 +40,7 @@ const AllCharacters = ({allCharacters}) => {
     .slice((charPage - 1) * 10, (charPage - 1) * 10 + 10)
     .map((char) => {
         return(
-        <Box key={char.id}>
+        <Box key={char.id} sx={{mx: 2}}>
             <Link style={{textDecoration: "none"}} to={`/characters/${char.id}`}>
                 <Card sx={{ width: 200, height: 260, border: 1, p: 2 }}>
                     <CardActionArea>
