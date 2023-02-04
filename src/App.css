@@ -78,6 +78,16 @@
   height: 300px;
 }
 
+.specificCharImg img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: auto;
+  height: 500px;
+}
+
 @media (max-width: 575px) {
 
   .articleContent img {
@@ -85,6 +95,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+  }
+  .specificCharImg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
   }
 }
 
